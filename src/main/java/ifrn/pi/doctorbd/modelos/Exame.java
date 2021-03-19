@@ -1,4 +1,4 @@
-package ifrn.pi.doctorbd.modelos;
+package ifrn.pi.doctorbd.Modelos;
 
 public class Exame {
 

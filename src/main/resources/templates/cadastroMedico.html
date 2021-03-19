@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<title>DoctorBD</title>
+</head>
+<body>
+	<div th:replace="~{menu :: menu}"></div>
+
+	<div class="container">
+     <h1>Cadastro como Médico</h1> 
+     
+    <p th:if="${loginError}" class="error">Wrong user or password</p>
+    <form th:action="@{/cadastroMedico}" method="post">
+    
+      <label for="nome">Nome de Usuário</label>:
+      <input type="text" id="nome" name="nome" autofocus="autofocus" /> <br />
+      <label for="password">Senha</label>:
+      <input type="password" id="senha" name="senha" /> <br/> 
+      <label for="telefone">Telefone</label>:
+      <input type="number" id="telefone" name="telefone" /> <br/> 
+     </form> 
+      
+      <div>
+	    <button class="waves-effect waves-light btn" type="submit">Cadastrar</button>
+	 </div>
+      
+      
+	</div>
+</body>
+
+</html>

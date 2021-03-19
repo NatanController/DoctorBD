@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<title>DoctorBD</title>
+</head>
+<body>
+	<div th:replace="~{menu :: menu}"></div>
+
+	<div class="container">
+     <h1>Cadastre-se segundo seu perfil</h1> 
+      
+      <div>
+	    <a href="cadastroCasaSaude" target="_self"><button class="waves-effect waves-light btn" type="reset">Casa Saúde</button></a>
+	    <a href="cadastroUsuario" target="_self"><button class="waves-effect waves-light btn" type="reset">Usuário</button></a>
+	    <a href="cadastroMedico" target="_self"><button class="waves-effect waves-light btn" type="reset">Médico</button></a>
+	 </div>
+      
+      
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<title>Eventos</title>
+</head>
+<body>
+
+	<div th:replace="~{menu :: menu}"></div>
+
+	<div class="container">
+
+		<h1>Cadastre-se como Casa Saúde</h1>
+
+		<form method="POST" th:action="@{/cadastroCasaSaude}">
+
+			 <label for="nome">Nome de Usuário</label>:
+      <input type="text" id="nome" name="nome" autofocus="autofocus" /> <br />
+      <label for="password">Senha</label>:
+      <input type="password" id="senha" name="senha" /> <br/> 
+      <label for="telefone">Telefone</label>:
+      <input type="number" id="telefone" name="telefone" /> <br/> 
+      <label for="cnpj">CNPJ</label>:
+      <input type="number" id="cnpj" name="cnpj" /> <br/> 
+      <label for="num_estabele">Número do Estabelicimento</label>:
+      <input type="number" id="cnpj" name="cnpj" /> <br/> 
+      <label for="rua">Rua</label>:
+      <input type="text" id="rua" name="rua" /> <br/> 
+      <label for="rua">Rua</label>:
+      <input type="text" id="rua" name="rua" /> <br/> 
+      
+      
+      
+      
+
+			<div>
+				<button class="waves-effect waves-light btn" type="submit">Cadastrar</button>
+				<button class="waves-effect waves-light btn" type="reset">Limpar</button>
+			</div>
+
+		</form>
+
+	</div>
+
+</body>
+</html>

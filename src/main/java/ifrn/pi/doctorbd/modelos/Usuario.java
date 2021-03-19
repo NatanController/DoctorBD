@@ -6,18 +6,28 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 
+
 @Entity
 public class Usuario {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
+	
 	private Long id_usuario;
+	
 	private String nome;
+	
 	private Long cpf;
-	private Long tel; 
-	private String senha; 
+	
+	private Long tel;
+	
+	private String senha;
+
 	private int num_casa;
+	
 	private String rua;
+	
 	private Long cep;
 	
 	

@@ -7,6 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 
 
+
 @Entity
 public class Medico {
 	
@@ -17,9 +18,13 @@ public class Medico {
 	@JoinColumn(name = "id_exame", referencedColumnName = "id_exame")
 	private Long id_exame;
 	
+  
 	private String nome; 
+   
 	private Long telefone; 
+  
 	private String senha;
+    
 	private Long cpf;
 	
 	

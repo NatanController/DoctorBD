@@ -5,5 +5,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import ifrn.pi.doctorbd.Modelos.Usuario;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+	
+	
+	Usuario findBycpf(String cpf);
 
 }

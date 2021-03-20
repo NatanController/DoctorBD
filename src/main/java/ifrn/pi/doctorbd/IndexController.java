@@ -11,28 +11,6 @@ public class IndexController {
 		
 		return "login";
 }
-	
-	@RequestMapping("/cadastro")
-	public String pagcadastro(){
-		
-		return "cadastro";
-} 
-	
-	@RequestMapping("/cadastroUsuario")
-	public String pagcadastroUsuario(){
-		
-		return "cadastroUsuario";
-}
-	@RequestMapping("/cadastroCasaSaude")
-	public String pagcadastroCasaSaude() {
-		return "cadastroCasaSaude";
-	}
-	
-	@RequestMapping("/cadastroMedico")
-	public String pagcadastroMedico(){
-		
-		return "cadastroMedico";
-}
 
 	
 }

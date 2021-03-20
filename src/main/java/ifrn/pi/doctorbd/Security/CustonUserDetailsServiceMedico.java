@@ -4,15 +4,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 import ifrn.pi.doctorbd.Modelos.Medico;
 import ifrn.pi.doctorbd.Repositories.MedicoRepository;
 
+
+@Service
 public class CustonUserDetailsServiceMedico implements UserDetailsService { 
 	
-	@Autowired
-	private MedicoRepository medicoRepository;
-
 	
+	@Autowired
+	private MedicoRepository medicoRepository; 
+	
+
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		Medico medico = medicoRepository.findBycpf(username);
@@ -24,12 +28,7 @@ public class CustonUserDetailsServiceMedico implements UserDetailsService {
 		}
 
 		return medico;
-	}
-	
-	
-	
-	
-	
+	} 
 	
 
 }
